@@ -1,5 +1,7 @@
 class ApplicationController < Sinatra::Base
 
+   
+
   configure do
   	set :views, "app/views"
   	set :public_dir, "public"
@@ -8,4 +10,6 @@ class ApplicationController < Sinatra::Base
   get "/" do
   	erb :index
   end
+
+
 end
